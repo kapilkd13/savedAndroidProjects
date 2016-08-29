@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.example.anurag.connect_net"
+        minSdkVersion 18
+        targetSdkVersion 23
+        useLibrary 'org.apache.http.legacy'
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file("libs/debug.keystore")
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.google.android.exoplayer:exoplayer:r1.4.1'
+    compile project(':httpmime-4.2.1new')
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+
+}

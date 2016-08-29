@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout" type="id"/>
+
+    <item name="learn_expand_id" type="id"/>
+    <item name="learn_lecture_id" type="id"/>
+    <item name="faq_expand_id" type="id"/>
+    <item name="faq_lecture_id" type="id"/>
+    <item name="radio_question_id" type="id"/>
+    <item name="checkbox_question_id" type="id"/>
+    <item name="textfield_question_id" type="id"/>
+    <item name="poll_lecture_id" type="id"/>
+</resources>

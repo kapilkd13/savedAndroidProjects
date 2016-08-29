@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/scrollView"
+android:layout_weight="1.10"
+
+android:fillViewport="true">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/complainrb"
+            android:id="@+id/radiogroup1"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="complain"
+                android:id="@+id/complainrb"
+                android:layout_marginTop="35dp"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reviews"
+                android:id="@+id/reviewrb"
+
+                android:checked="false"
+                android:clickable="true" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Description"
+            android:id="@+id/desclabel"
+
+            android:editable="false"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/radiogroup1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text=""
+            android:id="@+id/description"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="top|left"
+            android:layout_below="@+id/desclabel"
+            android:hint="enter your description here"
+            android:inputType="textMultiLine"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_below= "@+id/description"
+            />
+
+        <!-- Videoview to preview recorded video -->
+
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below= "@+id/imgPreview"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="upload Image"
+            android:id="@+id/upimage"
+            android:background="@color/btn_bg"
+            android:textColor="@color/white"
+            android:layout_below="@+id/videoPreview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="upload video"
+            android:id="@+id/upvideo"
+            android:textColor="@color/white"
+            android:layout_below="@+id/videoPreview"
+            android:background="@color/btn_bg"
+            android:layout_alignRight="@+id/radiogroup1"
+            android:layout_alignEnd="@+id/radiogroup1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            android:text="Send"
+            android:id="@+id/send"
+            android:background="@color/btn_bg"
+            android:textColor="@color/white"
+            android:layout_below="@id/upimage"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:adjustViewBounds="true"
+    android:background="@drawable/fragment_layout_border"
+    android:layout_margin="3dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:id="@+id/learning_lecture_layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:id="@+id/ll1"
+            android:adjustViewBounds="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="title.............."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/category_time_box"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="category"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:id="@+id/tv_category"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:text="timestamp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:id="@+id/tv_timestamp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="text"
+                android:layout_below="@+id/category_time_box"
+                android:id="@+id/tv_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/question_top_layout"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="Poll questions below!"
+                    android:layout_below="@+id/category_time_box"
+                    android:id="@+id/testtext"
+                    android:textColor="@color/btn_bg"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/btn_bg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/question_layout">
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="4dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Submit"
+                    android:id="@+id/submit"
+                    android:background="@color/btn_bg"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

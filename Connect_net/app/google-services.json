@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "730378264713",
+    "project_id": "panchayat-e86b2"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730378264713:android:b1acced81b462f4b",
+        "android_client_info": {
+          "package_name": "com.example.anurag.connect_net"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730378264713-vtkv92m1p5bidf14q21mjmbqu2l0j9bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anurag.connect_net",
+            "certificate_hash": "B60BB12D4CCC1BC478A76EC7294DF9D518A48E08"
+          }
+        },
+        {
+          "client_id": "730378264713-vt6gdib7t9ceb8vjunme1bgivp9d1edf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT6HqWAJDOIP6bv4YZsxyvRIY8MqBYeMY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
